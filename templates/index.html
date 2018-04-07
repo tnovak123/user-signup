@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form class="w3-container w3-card-4" action="/" method="POST">
+    <h1 class="w3-text-blue">Sign up</h1>
+    <table>
+        <tr> 
+            <td>     
+                <label class="w3-text-blue"><b>Username</b></label>
+            </td>
+            <td>
+                <input class="w3-input w3-border" name="un" type="text" value="">
+                <label class="error" id="unerror">{{ unerror }}</label>
+            </td>
+        </tr>
+        <tr>     
+            <td>
+                <label class="w3-text-blue"><b>Password</b></label>
+            </td>
+            <td>
+                <input class="w3-input w3-border" name="pw" type="text" value="">
+                <label class="error" id="pwerror">{{ pwerror }}</label>
+            </td>
+        </tr>
+        <tr>
+            <td>       
+                <label class="w3-text-blue"><b>Verify Password</b></label>
+            </td>
+            <td>    
+                <input class="w3-input w3-border" name="vpw" type="text" value="">
+                <label class="error" id="vpwerror">{{ vpwerror }}</label>
+            </td>
+        </tr>
+        <tr>    
+            <td> 
+                <label class="w3-text-blue"><b>Email (Optional)</b></label>
+            </td>
+            <td>
+                <input class="w3-input w3-border" name="email" type="text" value="">
+                <label class="error" id="emerror">{{ emerror }}</label>
+            </td>
+        </tr>
+    </table>
+    <p>      
+        <button class="w3-btn w3-blue">Sign up</button>
+    </p>
+</form>
+
+{% end block %}
