@@ -19,7 +19,7 @@
                 <label class="w3-text-blue"><b>Password</b></label>
             </td>
             <td>
-                <input class="w3-input w3-border" name="pw" type="text" value="">
+                <input class="w3-input w3-border" name="pw" type="password" value="">
                 <label class="error" id="pwerror">{{ pwerror }}</label>
             </td>
         </tr>
@@ -28,7 +28,7 @@
                 <label class="w3-text-blue"><b>Verify Password</b></label>
             </td>
             <td>    
-                <input class="w3-input w3-border" name="vpw" type="text" value="">
+                <input class="w3-input w3-border" name="vpw" type="password" value="">
                 <label class="error" id="vpwerror">{{ vpwerror }}</label>
             </td>
         </tr>
@@ -43,8 +43,8 @@
         </tr>
     </table>
     <p>      
-        <button class="w3-btn w3-blue">Sign up</button>
+        <button class="w3-btn w3-blue" type="submit">Sign up</button>
     </p>
 </form>
 
-{% end block %}
+{% endblock %}
